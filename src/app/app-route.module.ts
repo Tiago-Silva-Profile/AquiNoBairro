@@ -1,5 +1,4 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ContactComponent } from './contact/contact.component';
@@ -13,11 +12,14 @@ const routes: Routes = [
   {path: 'contact', component:ContactComponent},
   {path: 'about', component:AboutComponent},
   {path: 'home', component:HomeComponent},
+  {path: '', component:HomeComponent},
   // {path: '', redirectTo: 'Home', pathMatch: 'full'},
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
+
+
 export class AppRouteModule { }
