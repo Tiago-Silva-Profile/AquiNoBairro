@@ -1,0 +1,8 @@
+.about{
+  margin: 0 25rem 0 25rem;
+}
+
+.titulo{
+  display: flex;
+  align-items: center;
+}

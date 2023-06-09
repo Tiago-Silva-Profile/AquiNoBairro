@@ -1,3 +1,16 @@
 /*  */
 
-
+img {
+  width: 80px;
+  height: 80px;
+  margin: 0 15px 0 15px;
+}
+.navbar-brand{
+  display: flex;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  align-content: space-between;
+  font-size: 35px;
+  font-style: italic;
+}
