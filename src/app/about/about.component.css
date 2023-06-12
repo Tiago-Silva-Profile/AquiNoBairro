@@ -1,8 +1,16 @@
 .about{
-  margin: 0 25rem 0 25rem;
+  margin: 10rem 25rem 0 25rem;
+}
+
+.container{
+  margin: 5rem 0 5rem 0;
 }
 
 .titulo{
   display: flex;
   align-items: center;
+}
+
+p{
+  font-size: 40px;
 }
