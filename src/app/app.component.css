@@ -1,0 +1,8 @@
+div{
+  display: flex;
+  margin-top: 20px;
+}
+.aside{
+  border: 2px solid blue;
+  margin-right: 50px;
+}

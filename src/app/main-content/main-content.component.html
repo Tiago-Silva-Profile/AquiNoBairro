@@ -1,0 +1,18 @@
+<section class="portfolio">
+  <div class="portfolio-container">
+    <div class="portfolio-box" *ngFor="let item of offers">
+        <a href="#">
+          <img src="{{item.offersImg}}" alt="Texto">
+          <div class="portfolio-layer">
+            <h4>{{item.fornecedor}} - {{item.seguimento}}</h4>
+            <p>
+              {{item.oport}}
+            </p>
+            <a href="">
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </a>
+    </div>
+  </div>
+</section>

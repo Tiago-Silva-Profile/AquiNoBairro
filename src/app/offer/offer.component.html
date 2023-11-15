@@ -1,0 +1,35 @@
+<!-- Analisando as ofertas para refinanciamentos -->
+
+<body>
+  <table id="minhaTabela">
+    <thead>
+      <tr>
+        <th><h1>Validade</h1></th>
+        <th><h1>Nome</h1></th>
+        <th><h1>CPF/CNPJ</h1></th>
+        <th><h1>Nome do produto</h1></th>
+        <th><h1>Contato1</h1></th>
+        <th><h1>Contato2</h1></th>
+        <th><h1>Contato3</h1></th>
+        <th><h1>Email</h1></th>
+        <th><h1>CEP</h1></th>
+        <th><h1>Observações</h1></th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of offer">
+      <tr>
+        <th>{{ item.dataExpiracao }}</th>
+        <th>{{ item.nomeCliente }}</th>
+        <th>{{ item.cpfCnpjCliente }}</th>
+        <th>{{ item.nomeProduto }}</th>
+        <th>{{ item.telefoneContato.telefoneCelular }}</th>
+        <th>{{ item.telefoneContato.telefoneResidencial }}</th>
+        <th>{{ item.telefoneContato.telefoneComercial }}</th>
+        <th>{{ item.emailCliente }}</th>
+        <th>{{ item.contatoCep }}</th>
+        <th>{{ item.observacoes }}</th>
+      </tr>
+    </tbody>
+  </table>
+  <script src="seu-arquivo-javascript.js"></script>
+</body>
