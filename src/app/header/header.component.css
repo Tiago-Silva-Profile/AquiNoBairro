@@ -1,10 +1,20 @@
-.menu-search{
+nav{
   display: flex;
+  align-content: space-between;
+  height: 75px;
+  align-items: flex-start;
+  padding: 20px 0 20px 0;
 }
-.menu-container{
+.container-fluid{
   display: flex;
 	margin: 0 auto;
-	border: 1px solid #ccc;
   flex-direction: row;
+  align-items: center;
+}
+.menu-location{
+  display: flex;
+  width: 3rem;
+  align-items: center;
+
 }
 

@@ -1,8 +1,11 @@
-<div class="container-promotions">
+<div class="promotions">
+  <div class="promotions-container">
   <div id="carouselExampleInterval" class="carousel slide promotions" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="1000" *ngFor="let item of promotions">
-        <img [src]="item.promoImg" class="d-block w-100" [alt]="item.promoName">
+      <div class="carousel-item active promotions-box" data-bs-interval="3000" *ngFor="let item of promotions">
+        <a href="">
+          <img [src]="item.promoImg" class="d-block w-100" [alt]="item.promoName">
+        </a>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -14,4 +17,5 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+</div>
 </div>
