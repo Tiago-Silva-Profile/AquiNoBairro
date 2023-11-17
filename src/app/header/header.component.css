@@ -1,16 +1,24 @@
 nav{
   display: flex;
-  align-content: space-between;
-  height: 75px;
-  align-items: flex-start;
-  padding: 20px 0 20px 0;
-}
-.container-fluid{
-  display: flex;
-	margin: 0 auto;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  position: fixed;
+  height: 75px;
 }
+.container-category{
+  display: none;
+}
+
+/* Ativando o responsivo no menu*/
+@media (min-width: 834px){
+
+  .container-category{
+    display: block;
+  }
+
+}
+
+
 .menu-location{
   display: flex;
   width: 3rem;

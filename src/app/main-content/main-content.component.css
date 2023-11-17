@@ -25,6 +25,34 @@
   margin-left: 20px;
 }
 
+/* Ativando o responsivo*/
+@media (max-width: 834px){
+
+  .portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+}
+
+/* Ativando o responsivo*/
+@media (max-width: 500px){
+
+  .portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+}
+
 .portfolio-container .portfolio-box {
   position: relative;
   border-radius: 2rem;
