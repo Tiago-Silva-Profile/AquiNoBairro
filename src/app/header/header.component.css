@@ -2,7 +2,6 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   height: 75px;
 }
 .container-category{
@@ -18,11 +17,19 @@ nav{
 
 }
 
-
 .menu-location{
-  display: flex;
   width: 3rem;
   align-items: center;
-
+}
+.menu-user{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+.menu-user i{
+  margin-right: 50px;
 }
 
