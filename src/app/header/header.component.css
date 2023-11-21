@@ -3,6 +3,10 @@ nav{
   justify-content: space-between;
   align-items: center;
   height: 75px;
+  color: #ddd;
+}
+.navbar{
+  color: #ddd;
 }
 .container-category{
   display: none;
@@ -16,6 +20,9 @@ nav{
   }
 
 }
+.container-category a:hover {
+  border-bottom: 1px solid blue;
+}
 
 .menu-location{
   width: 3rem;
@@ -24,12 +31,59 @@ nav{
 .menu-user{
   display: flex;
   align-items: center;
-  justify-content: center;
+  align-items: center;
+  /*justify-content: center;
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 5px;
+  position: relative; */
+
 }
-.menu-user i{
-  margin-right: 50px;
+.btn-login{
+  display: flex;
+  margin-right: 1rem;
+}
+.bi {
+  margin-right: 1rem;
+  width: 1.5rem;
 }
 
+/* Estilo para o botão do dropdown */
+.dropdownbtn {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo para o contêiner do dropdown (oculto por padrão) */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilo para o conteúdo do dropdown (itens) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Estilo para os links dentro do dropdown */
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Mudar a cor do link ao passar o mouse sobre ele */
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+/* Exibir o dropdown quando o botão é clicado/hovered */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
