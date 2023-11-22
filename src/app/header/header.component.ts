@@ -9,13 +9,13 @@ export class HeaderComponent {
 
   // Valores mocados para o menu
   seguimentos: any[] = [
-    {seguimento:'All Categories', icone:'Teste'},
-    {seguimento:'Padaria', icone:'Teste'},
-    {seguimento:'Mercados', icone:'Teste'},
-    {seguimento:'Lanchonetes & Restaurantes', icone:'Teste'},
-    {seguimento:'Clubs & Acampamentos', icone:'Teste'},
-    {seguimento:'Lanchonetes', icone:'Teste'},
-    {seguimento:'Armazém', icone:'Teste'},
-    {seguimento:'Lanchonetes', icone:'Teste'}
+    {seguimento:'All Categories', icone:'assets/promotionImg/icon-menu/'},
+    {seguimento:'Padaria', icone:'assets/promotionImg/icon-menu/padaria.png'},
+    {seguimento:'Mercados', icone:'assets/promotionImg/icon-menu/mercearia.png'},
+    {seguimento:'Lanchonetes & Restaurantes', icone:'assets/promotionImg/icon-menu/'},
+    {seguimento:'Clubs & Acampamentos', icone:'assets/promotionImg/icon-menu/piscina.png'},
+    {seguimento:'Lanchonetes', icone:'assets/promotionImg/icon-menu/hamburguer.png'},
+    {seguimento:'Armazém', icone:'assets/promotionImg/icon-menu/armazem.png'},
+    {seguimento:'Transporte', icone:'assets/promotionImg/icon-menu/caminhao-bau.png'}
   ]
 }

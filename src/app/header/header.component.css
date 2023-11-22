@@ -2,11 +2,22 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
+  height: px;
   color: #ddd;
 }
-.navbar{
+.navbar-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1rem;
+}
+.navbar a{
   color: #ddd;
+  margin-right: 1.5rem;
+}
+.navbar a img{
+  height: 25px;
+  width: 25px;
 }
 .container-category{
   display: none;
@@ -44,7 +55,6 @@ nav{
   margin-right: 1rem;
 }
 .bi {
-  margin-right: 1rem;
   width: 1.5rem;
 }
 
