@@ -1,10 +1,44 @@
+:root{
+  --menu-bg-color: #2596be;
+  --text-menu:black;
+}
 nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: px;
-  color: #ddd;
+  color: var(--text-menu);
   height: 6rem;
+}
+.navbar-upper{
+  background-color: #2596be;
+}
+.navbar-upper-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 20rem 0 20rem;
+}
+.menu-logo{
+  color: white;
+  font-size: 30px;
+}
+.menu-search{
+  background-color: white;
+}
+.btn-search{
+  background-color: white;
+}
+.navbar-down{
+  border-bottom: 1px solid silver;
+}
+.navbar-down a{
+  color: #2596be;
+  margin-right: 1.5rem;
+}
+.navbar-down a img{
+  height: 25px;
+  width: 25px;
 }
 .navbar-nav{
   display: flex;
@@ -12,16 +46,9 @@ nav{
   align-items: center;
   margin-left: 1rem;
 }
-.navbar a{
-  color: #ddd;
-  margin-right: 1.5rem;
-}
-.navbar a img{
-  height: 25px;
-  width: 25px;
-}
 .container-category{
   display: none;
+  margin: 0 20rem 0 20rem;
 }
 
 /* Ativando o responsivo no menu*/
@@ -43,13 +70,10 @@ nav{
 .menu-user{
   display: flex;
   align-items: center;
-  align-items: center;
-  /*justify-content: center;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 5px;
-  position: relative; */
-
+  color: white;
+}
+.menu-user a{
+ color: white;
 }
 .btn-login{
   display: flex;
