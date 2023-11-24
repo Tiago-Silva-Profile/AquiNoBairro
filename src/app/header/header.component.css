@@ -4,6 +4,7 @@ nav{
   align-items: center;
   height: px;
   color: #ddd;
+  height: 6rem;
 }
 .navbar-nav{
   display: flex;
@@ -32,7 +33,7 @@ nav{
 
 }
 .container-category a:hover {
-  border-bottom: 1px solid blue;
+  border-bottom: 3px solid white;
 }
 
 .menu-location{
@@ -54,8 +55,8 @@ nav{
   display: flex;
   margin-right: 1rem;
 }
-.bi {
-  width: 1.5rem;
+.btn-login svg{
+  margin-right: 1rem;
 }
 
 /* Estilo para o botão do dropdown */
