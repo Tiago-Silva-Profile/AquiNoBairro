@@ -1,0 +1,29 @@
+.uf{
+  display: flex;
+  margin: 2rem 0 0 2rem;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+
+}
+.uf h6{
+  background-color:  rgb(126, 125, 125);
+  border: 3px solid rgb(44, 41, 41);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+.region{
+  display: grid;
+  grid-template-columns: 40px 40px 40px 40px 40px;
+  gap: 5px;
+
+}
+.btn{
+  background-color: silver;
+  align-items: center;
+}
+.region-sigla{
+  font-size: 15px;
+}

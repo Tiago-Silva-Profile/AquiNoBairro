@@ -1,2 +1,13 @@
 <!-- Menu lateral -->
-<p>aside works!</p>
+<div class="uf">
+<h6>UF</h6>
+  <div class="region">
+    <div class="container text-center" *ngFor="let regions of region">
+      <div class="row">
+          <a class="btn" href="#" role="button">
+          <div class="region-sigla">{{regions.siglas}}</div>
+        </a>
+        </div>
+      </div>
+  </div>
+</div>

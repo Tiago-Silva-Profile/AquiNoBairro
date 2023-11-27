@@ -6,10 +6,10 @@ div{
 head{
   margin-bottom: 100px;
 }
-aside{
-  margin-right: 50px;
-}
 footer {
   position: relative;
+}
+.main-content{
+  margin-left: 5rem;
 }
 
