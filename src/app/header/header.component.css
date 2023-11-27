@@ -25,9 +25,23 @@ nav{
 }
 .menu-search{
   background-color: white;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  /* border: 3px solid red; */
+  padding: 8px;
+}
+.form-control{
+  border: none;
+  animation: none;
+}
+.itens-search{
+  border-left: 2px solid silver;
 }
 .btn-search{
   background-color: white;
+  padding: 4px 4px 4px 4px;
 }
 .navbar-down{
   border-bottom: 1px solid silver;
@@ -35,16 +49,23 @@ nav{
 .navbar-down a{
   color: #2596be;
   margin-right: 1.5rem;
+  font-size: 17px;
 }
 .navbar-down a img{
   height: 25px;
   width: 25px;
 }
-.navbar-nav{
+.navbar-nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-left: 1rem;
+}
+.dropdown-toggle{
+  border: none;
+  background-color: white;
+  color: #2596be;
+  font-size: 17px;
 }
 .container-category{
   display: none;
