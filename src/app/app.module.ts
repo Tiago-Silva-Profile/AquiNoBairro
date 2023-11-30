@@ -9,6 +9,8 @@ import { OfferComponent } from './offer/offer.component';
 import { AsideComponent } from './aside/aside.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutPartnerComponent } from './about-partner/about-partner.component';
+import { AboutPartnerMenuComponent } from './about-partner/about-partner-menu/about-partner-menu.component';
+import { AboutPartnerPromotionComponent } from './about-partner/about-partner-promotion/about-partner-promotion.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { AboutPartnerComponent } from './about-partner/about-partner.component';
     OfferComponent,
     AsideComponent,
     FooterComponent,
-    AboutPartnerComponent
+    AboutPartnerComponent,
+    AboutPartnerMenuComponent,
+    AboutPartnerPromotionComponent
   ],
   imports: [
     BrowserModule
