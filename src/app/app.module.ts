@@ -11,6 +11,9 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutPartnerComponent } from './about-partner/about-partner.component';
 import { AboutPartnerMenuComponent } from './about-partner/about-partner-menu/about-partner-menu.component';
 import { AboutPartnerPromotionComponent } from './about-partner/about-partner-promotion/about-partner-promotion.component';
+import { AboutPartnerProductsComponent } from './about-partner/about-partner-products/about-partner-products.component';
+import { AboutPartnerPortfolioComponent } from './about-partner/about-partner-portfolio/about-partner-portfolio.component';
+import { AboutPartnerContactComponent } from './about-partner/about-partner-contact/about-partner-contact.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +26,21 @@ import { AboutPartnerPromotionComponent } from './about-partner/about-partner-pr
     FooterComponent,
     AboutPartnerComponent,
     AboutPartnerMenuComponent,
-    AboutPartnerPromotionComponent
+    AboutPartnerPromotionComponent,
+    AboutPartnerProductsComponent,
+    AboutPartnerPortfolioComponent,
+    AboutPartnerContactComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'HTTP_INTERCEPTORS',
+      useClass: AppComponent,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,13 @@
+div{
+  background-color: #3d4296;
+  margin-top: 8rem;
+}
+.img-teste{
+  display: flex;
+  align-content: center;
+}
+img{
+  position: relative;
+  width: 110rem;
+  margin: 2rem 2rem 2rem 2rem;
+}
