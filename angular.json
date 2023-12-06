@@ -16,7 +16,6 @@
             "outputPath": "dist/shop-model-one",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "charset": "UTF-8",
             "polyfills": [
               "zone.js"
             ],

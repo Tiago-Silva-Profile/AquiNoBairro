@@ -13,14 +13,12 @@
 
 :root {
     --bg-color: #1f242d;
-    --second-bg-color: #323946;
+    --bg-color-two: white;
+    --second-bg-color: #00035e;
     --text-color: #fff;
-    --main-color: #0ef;
-}
-
-htmal {
-    font-size: 62.5%;
-    overflow-x: hidden;
+    --text-color-two: white;
+    --main-color: silver;
+    --main-color-two: white;
 }
 
 body {
@@ -123,14 +121,16 @@ span {
 .portfolio-container .portfolio-box {
     position: relative;
     border-radius: 1rem;
-    box-shadow: 0 0 1rem var(--bg-color);
+    box-shadow: 0 0 1rem var(--bg-color-two);
     overflow: hidden;
     display: flex;
 }
 
 .portfolio-box img {
-    width: 100%;
-    transition: .5s ease;
+  width: 100%;
+  transition: .5s ease;
+  height: 15rem;
+  width: 100%;
 }
 
 .portfolio-box:hover img {
@@ -143,7 +143,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--second-bg-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,7 +173,7 @@ span {
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background: var(--text-color);
+    background: var(--text-color-two);
     border-radius: 50%;
 }
 

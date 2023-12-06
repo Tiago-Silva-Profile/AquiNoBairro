@@ -30,8 +30,9 @@
 }
 .container-grid{
   display: grid;
-  grid-template-columns: 10rem 10rem 10rem 10rem;
+  grid-template-columns: repeat(4, 10rem);
   grid-gap:5rem;
   align-items: center;
   align-content: center;
+  height: 10rem;
 }
