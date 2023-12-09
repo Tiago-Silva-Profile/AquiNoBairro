@@ -181,9 +181,16 @@ span {
     font-size: 2rem;
     color: var(--second-bg-color);
 }
-
 .contact h2 {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+.contact-map{
+  display: flex;
+  background-color: silver;
+}
+
+.contact-map iframe{
+  padding: 1.5rem;
 }
 
 .contact form {

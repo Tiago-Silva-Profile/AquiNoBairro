@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AboutPartnerProductsComponent {
 
+  products: any[] = [
+    {imgService: 'assets/genesis-foto/veicular.jpeg', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    {imgService: 'assets/genesis-foto/veicular.jpeg', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    {imgService: 'assets/genesis-foto/veicular.jpeg', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    {imgService: 'assets/genesis-foto/veicular.jpeg', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    {imgService: 'assets/genesis-foto/veicular.jpeg', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    {imgService: 'assets/genesis-foto/veicular.jpeg', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    {imgService: 'assets/genesis-foto/veicular.jpeg', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    {imgService: 'assets/genesis-foto/veicular.jpeg', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+
+  ]
+
+
 }
