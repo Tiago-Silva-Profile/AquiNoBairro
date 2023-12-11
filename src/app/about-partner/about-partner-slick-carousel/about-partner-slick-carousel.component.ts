@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-about-partner-slick-carousel',
   templateUrl: './about-partner-slick-carousel.component.html',
   styleUrls: ['./about-partner-slick-carousel.component.css']
 })
-export class AboutPartnerSlickCarouselComponent {
+export class AboutPartnerSlickCarouselComponent implements OnInit{
 
   slickConfig = {
     slidesToShow: 3, // Número de itens visíveis ao mesmo tempo
@@ -16,9 +17,37 @@ export class AboutPartnerSlickCarouselComponent {
   };
 
   itens = [
-    { id: 1, imagem: 'caminho/para/imagem1.jpg' },
-    { id: 2, imagem: 'caminho/para/imagem2.jpg' },
-    { id: 3, imagem: 'caminho/para/imagem3.jpg' },
+    { id: 1, imagem: 'assets/genesis-foto/veicular.jpeg' },
+    { id: 2, imagem: 'assets/genesis-foto/veicular.jpeg' },
+    { id: 3, imagem: 'assets/genesis-foto/veicular.jpeg' },
+    { id: 4, imagem: 'assets/genesis-foto/veicular.jpeg' },
+    { id: 5, imagem: 'assets/genesis-foto/bradesco-saude.png' },
+    { id: 7, imagem: 'assets/genesis-foto/veicular.jpeg' },
+    { id: 8, imagem: 'assets/genesis-foto/bradesco-saude.png' },
+    { id: 9, imagem: 'assets/genesis-foto/veicular.jpeg' },
+
     // Adicione mais itens conforme necessário
   ];
+
+  ngOnInit(): void {
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const swiper = new Swiper('.swiper-container', {
+        // Configurações opcionais
+        slidesPerView: 5,
+        spaceBetween: 5,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    });
+
+  }
+
+
 }

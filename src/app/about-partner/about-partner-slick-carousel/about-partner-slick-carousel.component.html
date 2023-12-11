@@ -1,10 +1,37 @@
-<div class="carrossel">
-  <div><img src="assets/genesis-foto/veicular.jpeg" alt="Imagem 1"></div>
-  <div><img src="assets/genesis-foto/veicular.jpeg" alt="Imagem 1"></div>
-  <div><img src="assets/genesis-foto/veicular.jpeg" alt="Imagem 1"></div>
-  <div><img src="assets/genesis-foto/veicular.jpeg" alt="Imagem 1"></div>
-  <div><img src="assets/genesis-foto/veicular.jpeg" alt="Imagem 1"></div>
-  <div><img src="assets/genesis-foto/veicular.jpeg" alt="Imagem 1"></div>
+<!-- Adicionando o swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="assets/genesis-foto/veicular.jpeg" alt="Imagem 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/genesis-foto/veicular.jpeg" alt="Imagem 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/genesis-foto/veicular.jpeg" alt="Imagem 3">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/genesis-foto/veicular.jpeg" alt="Imagem 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/genesis-foto/veicular.jpeg" alt="Imagem 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/genesis-foto/veicular.jpeg" alt="Imagem 3">
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/genesis-foto/bradesco-saude.png" alt="Imagem 3">
+      </div>
 
-  <!-- Adicione mais itens conforme necessário -->
-</div>
+      <!-- Adicione mais slides conforme necessário -->
+    </div>
+    <!-- Adicione a barra de navegação (opcional) -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <ngx-slick-carousel class="carrossel" [config]="slickConfig">
+    <div *ngFor="let item of itens">
+      <!-- Conteúdo do item do carrossel -->
+      <img [src]="item.imagem" alt="Item {{item.id}}">
+    </div>
+  </ngx-slick-carousel>

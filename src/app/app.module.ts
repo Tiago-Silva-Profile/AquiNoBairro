@@ -15,6 +15,7 @@ import { AboutPartnerProductsComponent } from './about-partner/about-partner-pro
 import { AboutPartnerPortfolioComponent } from './about-partner/about-partner-portfolio/about-partner-portfolio.component';
 import { AboutPartnerContactComponent } from './about-partner/about-partner-contact/about-partner-contact.component';
 import { AboutPartnerSlickCarouselComponent } from './about-partner/about-partner-slick-carousel/about-partner-slick-carousel.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AboutPartnerSlickCarouselComponent } from './about-partner/about-partne
     AboutPartnerSlickCarouselComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SlickCarouselModule
   ],
   providers: [
     {
