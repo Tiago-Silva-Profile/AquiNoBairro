@@ -1,5 +1,5 @@
-<!-- Adicionando o swiper -->
-  <div class="swiper-container">
+Adicionando o swiper
+  <!-- <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <img src="assets/genesis-foto/veicular.jpeg" alt="Imagem 1">
@@ -21,17 +21,27 @@
       </div>
       <div class="swiper-slide">
         <img src="assets/genesis-foto/bradesco-saude.png" alt="Imagem 3">
-      </div>
+      </div> -->
 
       <!-- Adicione mais slides conforme necessário -->
-    </div>
+    <!-- </div> -->
     <!-- Adicione a barra de navegação (opcional) -->
-    <div class="swiper-pagination"></div>
-  </div>
+    <!-- <div class="swiper-pagination"></div>
+  </div> -->
 
-  <ngx-slick-carousel class="carrossel" [config]="slickConfig">
-    <div *ngFor="let item of itens">
+  <ngx-slick-carousel class="carrossel" #slickModal="slick-carousel"
+  [config]="slideConfig"
+  (init)="slickInit($event)"
+  (breakpoint)="breakpoint($event)"
+  (afterChange)="afterChange($event)"
+  (beforeChange)="beforeChange($event)">
+    <div *ngFor="let item of slides">
       <!-- Conteúdo do item do carrossel -->
       <img [src]="item.imagem" alt="Item {{item.id}}">
     </div>
   </ngx-slick-carousel>
+
+  <button (click)="addSlide()">Add</button>
+    <button (click)="removeSlide()">Remove</button>
+    <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+    <button (click)="slickModal.unslick()">unslick</button>
