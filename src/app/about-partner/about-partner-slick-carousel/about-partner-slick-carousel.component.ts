@@ -1,10 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import Swiper from 'swiper';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-about-partner-slick-carousel',
+  standalone:true,
+  imports:[CommonModule, SlickCarouselModule],
   templateUrl: './about-partner-slick-carousel.component.html',
-  styleUrls: ['./about-partner-slick-carousel.component.css']
+  styleUrls: ['./about-partner-slick-carousel.component.css'],
 })
 export class AboutPartnerSlickCarouselComponent implements OnInit{
 
@@ -25,29 +28,34 @@ export class AboutPartnerSlickCarouselComponent implements OnInit{
   };
 
   slides = [
-    { id: 1, imagem: 'assets/genesis-foto/veicular.jpeg' },
-    { id: 2, imagem: 'assets/genesis-foto/veicular.jpeg' },
-    { id: 3, imagem: 'assets/genesis-foto/veicular.jpeg' },
-    { id: 4, imagem: 'assets/genesis-foto/veicular.jpeg' },
-    { id: 5, imagem: 'assets/genesis-foto/bradesco-saude.png' },
-    { id: 7, imagem: 'assets/genesis-foto/veicular.jpeg' },
-    { id: 8, imagem: 'assets/genesis-foto/bradesco-saude.png' },
-    { id: 9, imagem: 'assets/genesis-foto/veicular.jpeg' },
+    {imagem: 'assets/genesis-foto/veicular.jpeg' },
+    {imagem: 'assets/genesis-foto/veicular.jpeg' },
+    {imagem: 'assets/genesis-foto/veicular.jpeg' },
+    {imagem: 'assets/genesis-foto/veicular.jpeg' },
+    {imagem: 'assets/genesis-foto/bradesco-saude.png' },
+    {imagem: 'assets/genesis-foto/veicular.jpeg' },
+    {imagem: 'assets/genesis-foto/bradesco-saude.png' },
+    {imagem: 'assets/genesis-foto/veicular.jpeg' },
+    {imagem: 'assets/genesis-foto/bradesco-saude.png' },
+    {imagem: 'assets/genesis-foto/bradesco-saude.png' },
 
 
     // Adicione mais itens conforme necessário
   ];
 
   slideConfig = {
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    dots: true,
-    arrows: true,
-    autoplay: true,
-    autoplaySpeed: 2000};
+    "slidesToShow": 7,
+    "slidesToScroll": 1,
+    "autoplay": true,
+    "infinite":true,
+    "pauseOnHover": true,
+    "dots": true,
+    "arrows": true,
+    "autoplaySpeed": 2000};
+
 
   addSlide() {
-    this.slides.push({id: 10, imagem: "assets/genesis-foto/veicular.jpeg"})
+    this.slides.push({imagem: "assets/genesis-foto/veicular.jpeg"})
   }
 
   removeSlide() {

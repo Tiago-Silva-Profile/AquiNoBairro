@@ -1,4 +1,4 @@
-Adicionando o swiper
+<!-- Adicionando o swiper -->
   <!-- <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -29,17 +29,19 @@ Adicionando o swiper
     <!-- <div class="swiper-pagination"></div>
   </div> -->
 
-  <ngx-slick-carousel class="carrossel" #slickModal="slick-carousel"
-  [config]="slideConfig"
-  (init)="slickInit($event)"
-  (breakpoint)="breakpoint($event)"
-  (afterChange)="afterChange($event)"
-  (beforeChange)="beforeChange($event)">
-    <div *ngFor="let item of slides">
+  <ngx-slick-carousel class="carrossel"
+  #slickModal="slick-carousel"
+  [config]=slideConfig
+  (init)=slickInit($event)
+  (breakpoint)=breakpoint($event)
+  (afterChange)=afterChange($event)
+  (beforeChange)=beforeChange($event)>
+    <div ngxSlickItem *ngFor="let item of slides">
       <!-- Conteúdo do item do carrossel -->
-      <img [src]="item.imagem" alt="Item {{item.id}}">
+      <img [src]="item.imagem" alt="">
+      {{item.imagem}}
     </div>
-  </ngx-slick-carousel>
+</ngx-slick-carousel>
 
   <button (click)="addSlide()">Add</button>
     <button (click)="removeSlide()">Remove</button>

@@ -32,11 +32,11 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     AboutPartnerProductsComponent,
     AboutPartnerPortfolioComponent,
     AboutPartnerContactComponent,
-    AboutPartnerSlickCarouselComponent
   ],
   imports: [
     BrowserModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    AboutPartnerSlickCarouselComponent
   ],
   providers: [
     {
