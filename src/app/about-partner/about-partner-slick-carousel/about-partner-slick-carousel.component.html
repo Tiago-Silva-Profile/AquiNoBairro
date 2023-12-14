@@ -29,6 +29,9 @@
     <!-- <div class="swiper-pagination"></div>
   </div> -->
 
+  <h2 class="heading">Nossos <span>Parceiros</span></h2>
+  <p>Temos parceria com as maiores seguradoras do mercado, para garantir que nossos segurados estejam realmente protegidos. <br>
+    Possuímos também planos de saúde que trazem benefícios exclusivos aos nossos clientes.</p>
   <ngx-slick-carousel class="carrossel"
   #slickModal="slick-carousel"
   [config]=slideConfig
@@ -36,14 +39,16 @@
   (breakpoint)=breakpoint($event)
   (afterChange)=afterChange($event)
   (beforeChange)=beforeChange($event)>
+
     <div ngxSlickItem *ngFor="let item of slides">
       <!-- Conteúdo do item do carrossel -->
-      <img [src]="item.imagem" alt="">
-      {{item.imagem}}
+      <a href=""><img [src]="item.imagem" alt="">
+      {{item.plano}}
+      </a>
     </div>
 </ngx-slick-carousel>
 
-  <button (click)="addSlide()">Add</button>
+  <!-- <button (click)="addSlide()">Add</button>
     <button (click)="removeSlide()">Remove</button>
-    <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
-    <button (click)="slickModal.unslick()">unslick</button>
+    <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>-->
+    <button (click)="slickModal.unslick()"></button>

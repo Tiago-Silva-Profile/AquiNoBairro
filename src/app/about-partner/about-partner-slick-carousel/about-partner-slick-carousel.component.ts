@@ -11,34 +11,16 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 })
 export class AboutPartnerSlickCarouselComponent implements OnInit{
 
-  slickConfig = {
-    // slidesToShow: 3, // Número de itens visíveis ao mesmo tempo
-    // slidesToScroll: 1, // Número de itens a serem movidos por vez
-    // autoplay: true, // Ativa a reprodução automática
-    // autoplaySpeed: 2000, // Velocidade da reprodução automática em milissegundos
-    // infinite: true, // Habilita o movimento contínuo do carrossel
-
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    dots: true,
-    arrows: true,
-    autoplay: true,
-    autoplaySpeed: 200,
-    Infinity: true
-  };
-
   slides = [
-    {imagem: 'assets/genesis-foto/veicular.jpeg' },
-    {imagem: 'assets/genesis-foto/veicular.jpeg' },
-    {imagem: 'assets/genesis-foto/veicular.jpeg' },
-    {imagem: 'assets/genesis-foto/veicular.jpeg' },
-    {imagem: 'assets/genesis-foto/bradesco-saude.png' },
-    {imagem: 'assets/genesis-foto/veicular.jpeg' },
-    {imagem: 'assets/genesis-foto/bradesco-saude.png' },
-    {imagem: 'assets/genesis-foto/veicular.jpeg' },
-    {imagem: 'assets/genesis-foto/bradesco-saude.png' },
-    {imagem: 'assets/genesis-foto/bradesco-saude.png' },
-
+    {imagem: 'assets/genesis-foto/operadoras_saude/amil.png', plano:""},
+    {imagem: 'assets/genesis-foto/operadoras_saude/bradesco.png', plano:""},
+    {imagem: 'assets/genesis-foto/operadoras_saude/Hapvida.png', plano:""},
+    {imagem: 'assets/genesis-foto/operadoras_saude/NotreDame.png', plano:""},
+    {imagem: 'assets/genesis-foto/operadoras_saude/porto-seguro.png', plano:""},
+    {imagem: 'assets/genesis-foto/operadoras_saude/qsaude.png', plano:""},
+    {imagem: 'assets/genesis-foto/operadoras_saude/sulamerica.png', plano:""},
+    {imagem: 'assets/genesis-foto/operadoras_saude/unimed.png', plano:""},
+    {imagem: 'assets/genesis-foto/operadoras_saude/vertical.png', plano:""}
 
     // Adicione mais itens conforme necessário
   ];
@@ -55,7 +37,7 @@ export class AboutPartnerSlickCarouselComponent implements OnInit{
 
 
   addSlide() {
-    this.slides.push({imagem: "assets/genesis-foto/veicular.jpeg"})
+    this.slides.push()
   }
 
   removeSlide() {

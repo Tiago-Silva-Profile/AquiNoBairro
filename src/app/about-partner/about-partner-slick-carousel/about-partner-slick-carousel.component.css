@@ -7,12 +7,27 @@
   width: 100%;
   height: auto;
 }
-.carrossel {
-  display: flex;
-  width: 100%;
-  margin: auto;
+h2{
+  margin-top: 3rem;
 }
-.carrossel img {
-  width: 100%;
-  height: auto;
+
+p{
+  text-align: center;
+}
+
+ngx-slick-carousel{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.carrossel {
+  width: 90%;
+  height: 50%;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.carrossel a img {
+  width: 90%;
+  height: 100%;
 }
