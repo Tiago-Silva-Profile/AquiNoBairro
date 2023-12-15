@@ -7,6 +7,12 @@ nav{
   margin-bottom: 2rem;
   align-items: center;
 }
+.container-logo img{
+  height: 9rem;
+  width: 20rem;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
 .container-menu a{
   color:#010065;
 }
@@ -23,5 +29,9 @@ nav{
 }
 .bi{
   color: #010065;
+  font-size: 25px;
+}
+.nav-link{
+  font-size: 20px;
 }
 
