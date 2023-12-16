@@ -26,6 +26,7 @@
 .apresentation-img img{
   width: 30rem;
   height: 30rem;
+  animation: floatImage 4s ease-in-out infinite;
 }
 /* organizando o contener da direita */
 .container-right{
@@ -72,7 +73,7 @@
 
 .portfolio-box img {
 width: 100%;
-transition: .5s ease;
+transition: 1.5s ease;
 height: 15rem;
 width: 100%;
 }
@@ -87,7 +88,7 @@ width: 100%;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, .1), var(--second-bg-color));
+  background: linear-gradient(rgba(0, 0, 0, .8), white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,6 +106,7 @@ width: 100%;
 .portfolio-layer h4 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  color: white;
 }
 
 .portfolio-layer p {

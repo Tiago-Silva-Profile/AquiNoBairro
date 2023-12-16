@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements HttpInterceptor {
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    // Adicione o cabeçalho Content-Type com charset UTF-8
+    // Adicione o cabeï¿½alho Content-Type com charset UTF-8
     request = request.clone({
       setHeaders: {
         'Content-Type': 'application/json; charset=utf-8'

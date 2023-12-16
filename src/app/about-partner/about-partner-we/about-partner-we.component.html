@@ -1,0 +1,56 @@
+<div class="container">
+  <h1>Nossa História</h1>
+
+  <div class="we-container">
+    <div class="video-container">
+      <video src="assets/genesis-foto/video/apresentacao-instituicao.mp4"
+      class="presentacao-empresa" type="video/mp4">
+      </video>
+    </div>
+
+
+    <p>A Gênesis Seguros é uma empresa credenciada na SUSEP, especializada em consultoria de Seguros e Planos de saúde, com prestação de serviços, estando no mercado a mais de 20 anos .
+
+      Nosso objetivo é proporcionar proteção ao patrimônio das pessoas, para isso, evoluímos com o mercado de seguros,
+      oferecemos diferentes soluções e nos mantemos sempre atentos aos nossos clientes, possuímos uma infraestrutura para atender todas as necessidades e colaboradores capacitando e qualificados.
+    </p>
+
+  </div>
+  <div class="we-value">
+    <div class="we-missao">
+      <h5>Missão</h5>
+
+      Ser uma consultoria diferenciada no mercado por sempre proporcionar aos nossos clientes proteção, comodidade, segurança e satisfação a custo benefício.
+    </div>
+
+    <div class="we-visao">
+      <h5>Visão</h5>
+      Ser uma consultoria reconhecida pela responsabilidade, transparência nas negociações e relacionamento com os nossos clientes.
+    </div>
+
+    <div class="we-valore">
+      <h5>Valores</h5>
+      Bravura, Honestidade, Ética e Moral.
+    </div>
+  </div>
+
+    <div class="we-time">
+      <h2>Nossa Equipe</h2>
+
+      <div class="team-member-ceo">
+        <img src="assets/genesis-foto/nossa-equipe/colab.png" alt="Foto do Membro da Equipe 1">
+        <div class="ceo">
+          <p>Gilmar Chagas</p>
+          <p>CEO e Fundador</p>
+        </div>
+      </div>
+
+      <div class="team-member">
+        <div class="team-member-img" *ngFor="let item of colabs">
+          <img [src]="item.img" alt="Foto do Membro da Equipe 2">
+          <p>{{item.colab}}</p>
+          <p>{{item.ocupacao}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
