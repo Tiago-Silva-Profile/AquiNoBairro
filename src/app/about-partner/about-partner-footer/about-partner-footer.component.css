@@ -1,0 +1,16 @@
+footer {
+  background-color: #010161;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.redes-sociais a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.contato p {
+  margin: 5px 0;
+}

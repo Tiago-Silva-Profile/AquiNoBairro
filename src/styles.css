@@ -265,3 +265,18 @@ span {
         margin-top: 2rem;
     }
 }
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.navbar-brand-bi {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+}
+.navbar-brand img:hover{
+  transform: scale(1.1);
+}

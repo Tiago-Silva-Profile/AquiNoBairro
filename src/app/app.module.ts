@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { PartnerRoutingModule } from './about-partner/partner-routing.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -18,6 +19,9 @@ import { AboutPartnerSlickCarouselComponent } from './about-partner/about-partne
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { AboutPartnerFooterComponent } from './about-partner/about-partner-footer/about-partner-footer.component';
 import { AboutPartnerWeComponent } from './about-partner/about-partner-we/about-partner-we.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AboutPartnerStartComponent } from './about-partner/about-partner-start/about-partner-start.component';
+import { AboutPartnerProductsPortfolioComponent } from './about-partner/about-partner-products-portfolio/about-partner-products-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -36,11 +40,15 @@ import { AboutPartnerWeComponent } from './about-partner/about-partner-we/about-
     AboutPartnerContactComponent,
     AboutPartnerFooterComponent,
     AboutPartnerWeComponent,
+    AboutPartnerStartComponent,
+    AboutPartnerProductsPortfolioComponent,
   ],
   imports: [
     BrowserModule,
     SlickCarouselModule,
-    AboutPartnerSlickCarouselComponent
+    AboutPartnerSlickCarouselComponent,
+    PartnerRoutingModule,
+    AppRoutingModule
   ],
   providers: [
     {
