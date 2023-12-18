@@ -69,13 +69,12 @@
   box-shadow: 0 0 1rem var(--bg-color-two);
   overflow: hidden;
   display: flex;
+  height: 90%;
 }
 
 .portfolio-box img {
 width: 100%;
 transition: 1.5s ease;
-height: 15rem;
-width: 100%;
 }
 
 .portfolio-box:hover img {
