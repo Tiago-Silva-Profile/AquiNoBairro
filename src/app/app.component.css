@@ -1,15 +1,10 @@
 div{
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 30px;
 }
 head{
   margin-bottom: 100px;
 }
 footer {
   position: relative;
-}
-.main-content{
-  margin-left: 5rem;
 }
 
