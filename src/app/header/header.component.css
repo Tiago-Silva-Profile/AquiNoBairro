@@ -104,7 +104,7 @@ nav{
   margin-right: 1rem;
 }
 
-/* Estilo para o botão do dropdown */
+/* Estilo para o botï¿½o do dropdown */
 .dropdownbtn {
   padding: 10px;
   font-size: 16px;
@@ -112,13 +112,13 @@ nav{
   cursor: pointer;
 }
 
-/* Estilo para o contêiner do dropdown (oculto por padrão) */
+/* Estilo para o contï¿½iner do dropdown (oculto por padrï¿½o) */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Estilo para o conteúdo do dropdown (itens) */
+/* Estilo para o conteï¿½do do dropdown (itens) */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -139,7 +139,7 @@ nav{
   background-color: #ddd;
 }
 
-/* Exibir o dropdown quando o botão é clicado/hovered */
+/* Exibir o dropdown quando o botï¿½o ï¿½ clicado/hovered */
 .dropdown:hover .dropdown-menu {
   display: block;
 }

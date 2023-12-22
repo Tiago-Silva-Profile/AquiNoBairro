@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 nav{
   display: flex;
   width: 100%;
@@ -19,7 +21,8 @@ nav{
 }
 .container-menu a:hover{
   color:#6766cd ;
-  border-bottom: 2px solid #010065;
+  transform: scale(1.1);
+
 }
 .d-inline-block{
   width: 15rem;
@@ -34,5 +37,42 @@ nav{
 }
 .nav-link{
   font-size: 20px;
+}
+
+/* Estilo para o cont�iner do dropdown (oculto por padr�o) */
+.dropdown-partner {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilo para o conte�do do dropdown (itens) */
+.dropdown-menu-partner {
+  display: none;
+  position: absolute;
+  width: 16rem;
+  z-index: 1;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  background-color: white;
+}
+
+/* Estilo para os links dentro do dropdown */
+.dropdown-menu-partner a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Exibir o dropdown quando o bot�o � clicado/hovered */
+.dropdown-partner:hover .dropdown-menu-partner {
+  display: block;
+}
+.dropdown-toggle-partner{
+  border: none;
+  background-color: white;
+  color: #2596be;
+  font-size: 17px;
 }
 
