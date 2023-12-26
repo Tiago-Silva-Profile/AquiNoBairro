@@ -22,6 +22,8 @@ import { AboutPartnerWeComponent } from './about-partner/about-partner-we/about-
 import { AppRoutingModule } from './app-routing.module';
 import { AboutPartnerStartComponent } from './about-partner/about-partner-start/about-partner-start.component';
 import { AboutPartnerProductsPortfolioComponent } from './about-partner/about-partner-products-portfolio/about-partner-products-portfolio.component';
+import { FormsModule } from '@angular/forms';
+import { AboutPartnerServiceModule } from './about-partner/about-partner-service/about-partner-service.module';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { AboutPartnerProductsPortfolioComponent } from './about-partner/about-pa
     SlickCarouselModule,
     AboutPartnerSlickCarouselComponent,
     PartnerRoutingModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    AboutPartnerServiceModule,
   ],
   providers: [
     {

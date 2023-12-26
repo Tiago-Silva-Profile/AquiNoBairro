@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+:root{
+
+}
+
 nav{
   display: flex;
   width: 100%;
@@ -8,7 +12,6 @@ nav{
   background-color: white;
   margin-bottom: 2rem;
   align-items: center;
-  box-shadow: 0 0 0.5rem var(--bg-color);
 }
 .container-logo img{
   height: 9rem;
@@ -20,7 +23,6 @@ nav{
   color:#010065;
 }
 .container-menu a:hover{
-  color:#6766cd ;
   transform: scale(1.1);
 
 }

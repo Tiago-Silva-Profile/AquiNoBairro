@@ -12,7 +12,7 @@ import { AboutPartnerContactComponent } from './about-partner/about-partner-cont
 const routes: Routes = [
   { path:'', component: AboutPartnerStartComponent },
   { path:'partner/about', component: AboutPartnerWeComponent },
-  { path:'partner/seguradoras', component: AboutPartnerProductsPortfolioComponent },
+  { path:'partner/produtos', component: AboutPartnerProductsPortfolioComponent },
   { path:'partner/contatos', component: AboutPartnerContactComponent },
   // ... outras rotas, se houver
 ];

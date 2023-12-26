@@ -1,5 +1,15 @@
 <div class="we-time">
-  <h1>SEGURADORAS PARCEIRA</h1>
+  <h1>PRODUTOS & SERVIÇOS</h1>
+
+  <!-- FILTRO NOS PRODUTOS E SERVIÇOS DOS PARCEIROS -->
+  <div>
+    <label for="tipoSelecionado">Selecione o tipo de veículo:</label>
+    <select id="tipoSelecionado" [(ngModel)]="tipoSelecionado">
+      <option *ngFor="let item of servicos" [value]="item">{{item}}</option>
+      <option value="Moto">Moto</option>
+    </select>
+    <button (click)="realizarFiltro()">Filtrar Marcas</button>
+  </div>
 
   <div class="team-member">
     <div class="team-member-img" *ngFor="let item of colabs">
@@ -10,4 +20,12 @@
       </a>
     </div>
   </div>
+
+<div *ngIf="marcasFiltradas && marcasFiltradas.length > 0">
+  <h3>Marcas Filtradas:</h3>
+  <ul>
+    <li *ngFor="let marca of marcasFiltradas">{{ marca }}</li>
+  </ul>
 </div>
+</div>
+
