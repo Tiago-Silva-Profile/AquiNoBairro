@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { AboutPartnerPortfolioComponent } from '../about-partner-portfolio/about-partner-portfolio.component';
 
 @Component({
   selector: 'app-about-partner-menu',
   templateUrl: './about-partner-menu.component.html',
   styleUrls: ['./about-partner-menu.component.css']
 })
-export class AboutPartnerMenuComponent {
+export class AboutPartnerMenuComponent implements OnInit{
+
+  selectedMarca: string = '';
 
   productService:any[] = [
     {service:'Planos de Saúde', caminho:'/partner/seguradoras'},
@@ -17,12 +20,20 @@ export class AboutPartnerMenuComponent {
   ]
 
   //Sempre que a navegação for concluída, a página será rolada para o topo.
-  constructor(private router: Router) {
+  constructor(private router: Router,
+              ) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         window.scrollTo(0, 0);
       }
     });
+  }
+
+  redirecionar(value: string) {
+      this.router.navigate(['partner/produtos',value ]);
+  }
+  ngOnInit(): void {
+
   }
 
 }

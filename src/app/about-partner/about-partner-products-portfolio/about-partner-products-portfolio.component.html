@@ -5,10 +5,9 @@
   <div>
     <label for="tipoSelecionado">Selecione o tipo de veículo:</label>
     <select id="tipoSelecionado" [(ngModel)]="tipoSelecionado">
-      <option *ngFor="let item of servicos" [value]="item">{{item}}</option>
-      <option value="Moto">Moto</option>
+      <option *ngFor="let item of marcaSelecionada" [value]="item">{{item}}</option>
     </select>
-    <button (click)="realizarFiltro()">Filtrar Marcas</button>
+    <button (click)="realizarFiltro(tipoSelecionado)">Filtrar Marcas</button>
   </div>
 
   <div class="team-member">
@@ -23,9 +22,24 @@
 
 <div *ngIf="marcasFiltradas && marcasFiltradas.length > 0">
   <h3>Marcas Filtradas:</h3>
-  <ul>
+  <!-- <ul>
     <li *ngFor="let marca of marcasFiltradas">{{ marca }}</li>
-  </ul>
+  </ul> -->
+
+  <div class="portfolio-container">
+    <div class="portfolio-box" *ngFor="let item of servicos">
+      <img [src]="item.imgService" [alt]="" />
+      <p>
+        {{item.textoImg}}
+      </p>
+      <div class="portfolio-layer">
+        <h4>{{item.titulo}}</h4>
+        <a href="">
+          <i class="bx bx-link-external"></i>
+        </a>
+      </div>
+    </div>
+</div>
 </div>
 </div>
 

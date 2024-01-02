@@ -13,22 +13,22 @@
           <a class="nav-link" routerLink="/partner/about">SOBRE NÓS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/partner/seguradoras">SEGURADORAS</a>
+          <a class="nav-link" routerLink="/partner/produtos/:value" (click)="redirecionar('Seguros')">SEGURADORAS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">PLANOS DE SAÚDE</a>
+          <a class="nav-link" routerLink="/partner/produtos">PLANOS DE SAÚDE</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/partner/contatos">CONTATOS</a>
         </li>
         <li class="nav-item dropdown-partner">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" routerLink="/partner/produtos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             PRODUTOS E SERVIÇOS
           </a>
           <ul class="dropdown-menu-partner" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item-partner" *ngFor="let item of productService" routerLink="{{item.caminho}}">{{item.service}}</a></li>
+            <li><a class="dropdown-item-partner" *ngFor="let item of productService" routerLink="/partner/produtos">{{item.service}}</a></li>
             <li><hr class="dropdown-divider-partner"></li>
-            <li><a class="dropdown-item-partner" href="#">Veja mais</a></li>
+            <li><a class="dropdown-item-partner" routerLink="/partner/produtos">Veja mais</a></li>
           </ul>
         </li>
       </ul>

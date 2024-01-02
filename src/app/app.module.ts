@@ -52,7 +52,7 @@ import { AboutPartnerServiceModule } from './about-partner/about-partner-service
     PartnerRoutingModule,
     AppRoutingModule,
     FormsModule,
-    AboutPartnerServiceModule,
+    AboutPartnerServiceModule
   ],
   providers: [
     {
