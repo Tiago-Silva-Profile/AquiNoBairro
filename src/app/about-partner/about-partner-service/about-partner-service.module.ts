@@ -1,7 +1,6 @@
 import { Injectable, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Observable, of } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
 
 
 
@@ -69,11 +68,24 @@ export class AboutPartnerServiceModule {
     { tipo: 'Seguros', marca: 'Marca A', imgService: 'assets/genesis-foto/veicular2.png', titulo:'Seguro Veicular Grande porte', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
     { tipo: 'Seguros', marca: 'Marca A', imgService: 'assets/genesis-foto/consorcio.png', titulo:'Consórcio', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
     { tipo: 'Seguros', marca: 'Marca A', imgService: 'assets/genesis-foto/imoveis.png', titulo:'Seguro de Imoveis', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Seguros', marca: 'Marca A', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Seguros', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Saude', marca: 'Marca A', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Saude', marca: 'Marca A', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Saude', marca: 'Marca A', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Saude', marca: 'Marca A', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Saude', marca: 'Marca A', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Financeiro', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Financeiro', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Financeiro', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Financeiro', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Financeiro', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
     { tipo: 'Seguros', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo2.jpg', titulo:'Seguro Empresarial', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
     { tipo: 'Seguros', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo3.jpg', titulo:'Seguro Familia', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Seguros', marca: 'Marca A', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Pet', marca: 'Marca A', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Pet', marca: 'Marca A', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Pet', marca: 'Marca A', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Pet', marca: 'Marca A', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Pet', marca: 'Marca A', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Pet', marca: 'Marca A', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
 
     // Adicione mais marcas conforme necessário
   ];

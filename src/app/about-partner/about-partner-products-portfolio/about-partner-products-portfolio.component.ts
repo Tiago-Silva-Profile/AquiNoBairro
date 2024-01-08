@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AboutPartnerServiceModule } from '../about-partner-service/about-partner-service.module';
-import { ActivatedRoute, Router } from '@angular/router';
-import { AboutPartnerMenuComponent } from '../about-partner-menu/about-partner-menu.component';
-import { empty } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 @Component({
   selector: 'app-about-partner-products-portfolio',
@@ -17,16 +16,23 @@ export class AboutPartnerProductsPortfolioComponent implements OnInit {
   marcasFiltradas: string[] = [];
   colabs:any[]=[];
   marcaSelecionada: any;
+  marcaSelecionadaUrl: any;
 
   constructor(private veiculoService: AboutPartnerServiceModule,
-              private menuPartner: AboutPartnerMenuComponent,
-              private route: ActivatedRoute) {
-    this.servicos = veiculoService.marcas
-    // Realiza o filtro do valor passado pela URL
-    this.marcaSelecionada = this.route.snapshot.params['value']
+              private route: ActivatedRoute
+             ,private appRoutingModule: AppRoutingModule ) {
+      /*Busca do modulo service trazendo o json completo referente as marcas */
+      this.servicos = veiculoService.marcas
 
   }
+
+
   ngOnInit(): void {
+
+    // Realiza o filtro do valor passado pela URL
+    this.marcaSelecionadaUrl = this.route.snapshot.paramMap.get('value')
+    this.realizarFiltro(this.marcaSelecionadaUrl)
+
 
     /**
      *  Realiza o filtro dos produtos que esta cadastrado no portfolio do cliente
@@ -34,6 +40,8 @@ export class AboutPartnerProductsPortfolioComponent implements OnInit {
         this.veiculoService.getTipos().subscribe((tipos) => {
           this.marcaSelecionada = tipos;
         });
+
+
   }
 
     realizarFiltro(value: string) {
@@ -41,9 +49,6 @@ export class AboutPartnerProductsPortfolioComponent implements OnInit {
       /**
        * CORRIGIR ESTE FILTRO QUE ESTA QUEBRADO COM URGENCIA!
        */
-      if(this.marcaSelecionada!= null){
-        this.marcasFiltradas = this.veiculoService.filtrarMarcasPorTipo(this.menuPartner.redirecionar(value))
-      }
       this.marcasFiltradas = this.veiculoService.filtrarMarcasPorTipo(value);
 
     }

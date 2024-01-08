@@ -13,10 +13,10 @@
           <a class="nav-link" routerLink="/partner/about">SOBRE NÓS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/partner/produtos/:value" (click)="redirecionar('Seguros')">SEGURADORAS</a>
+          <a class="nav-link" [routerLink]="['/partner/produtos/:value']" (click)="redirecionar('Seguros')">SEGURADORAS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/partner/produtos">PLANOS DE SAÚDE</a>
+          <a class="nav-link" [routerLink]="['/partner/produtos']" >PLANOS DE SAÚDE</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/partner/contatos">CONTATOS</a>
