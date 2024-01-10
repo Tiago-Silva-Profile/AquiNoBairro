@@ -2,7 +2,7 @@
 
   <div class="container-logo">
     <a class="navbar-brand" href="#">
-      <img src="\assets\genesis-foto\logo-genesis.png" alt="" class="d-inline-block">
+      <img src="\assets\teste.png" alt="" class="d-inline-block">
     </a>
   </div>
 
@@ -12,12 +12,12 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/partner/about">SOBRE NÓS</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" [routerLink]="['/partner/produtos/:value']" (click)="redirecionar('Seguros')">SEGURADORAS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/partner/produtos']" >PLANOS DE SAÚDE</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" routerLink="/partner/contatos">CONTATOS</a>
         </li>
@@ -28,7 +28,7 @@
           <ul class="dropdown-menu-partner" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item-partner" *ngFor="let item of productService" routerLink="/partner/produtos">{{item.service}}</a></li>
             <li><hr class="dropdown-divider-partner"></li>
-            <li><a class="dropdown-item-partner" routerLink="/partner/produtos">Veja mais</a></li>
+            <li><a class="dropdown-item-partner" [routerLink]="['/partner/produtos']">Veja mais</a></li>
           </ul>
         </li>
       </ul>

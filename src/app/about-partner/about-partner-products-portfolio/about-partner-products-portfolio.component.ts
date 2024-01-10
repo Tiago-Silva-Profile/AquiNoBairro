@@ -13,7 +13,14 @@ export class AboutPartnerProductsPortfolioComponent implements OnInit {
 
   tipoSelecionado!: string;
   servicos: any[];
-  marcasFiltradas: string[] = [];
+  marcasFiltradas: {
+    marca:string,
+    imgService:string,
+    titulo:string,
+    textoImg:string}[] = [];
+
+
+
   colabs:any[]=[];
   marcaSelecionada: any;
   marcaSelecionadaUrl: any;
@@ -23,6 +30,8 @@ export class AboutPartnerProductsPortfolioComponent implements OnInit {
              ,private appRoutingModule: AppRoutingModule ) {
       /*Busca do modulo service trazendo o json completo referente as marcas */
       this.servicos = veiculoService.marcas
+      console.log(this.servicos);
+
 
   }
 
@@ -30,8 +39,8 @@ export class AboutPartnerProductsPortfolioComponent implements OnInit {
   ngOnInit(): void {
 
     // Realiza o filtro do valor passado pela URL
-    this.marcaSelecionadaUrl = this.route.snapshot.paramMap.get('value')
-    this.realizarFiltro(this.marcaSelecionadaUrl)
+    // this.marcaSelecionadaUrl = this.route.snapshot.paramMap.get('value')
+    // this.realizarFiltro(this.marcaSelecionadaUrl)
 
 
     /**
@@ -50,6 +59,7 @@ export class AboutPartnerProductsPortfolioComponent implements OnInit {
        * CORRIGIR ESTE FILTRO QUE ESTA QUEBRADO COM URGENCIA!
        */
       this.marcasFiltradas = this.veiculoService.filtrarMarcasPorTipo(value);
+      console.log(this.marcasFiltradas)
 
     }
 

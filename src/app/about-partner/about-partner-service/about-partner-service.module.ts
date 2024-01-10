@@ -64,39 +64,37 @@ export class AboutPartnerServiceModule {
 
 
   marcas: any[] = [
-    { tipo: 'Seguros', marca: 'Marca A', imgService: 'assets/genesis-foto/veicular.png', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Seguros', marca: 'Marca A', imgService: 'assets/genesis-foto/veicular2.png', titulo:'Seguro Veicular Grande porte', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Seguros', marca: 'Marca A', imgService: 'assets/genesis-foto/consorcio.png', titulo:'Consórcio', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Seguros', marca: 'Marca A', imgService: 'assets/genesis-foto/imoveis.png', titulo:'Seguro de Imoveis', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Saude', marca: 'Marca A', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Saude', marca: 'Marca A', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Saude', marca: 'Marca A', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Saude', marca: 'Marca A', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Saude', marca: 'Marca A', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Financeiro', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Financeiro', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Financeiro', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Financeiro', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Financeiro', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Seguros', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo2.jpg', titulo:'Seguro Empresarial', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Seguros', marca: 'Marca A', imgService: 'assets/genesis-foto/seguro-logo3.jpg', titulo:'Seguro Familia', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Pet', marca: 'Marca A', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Pet', marca: 'Marca A', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Pet', marca: 'Marca A', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Pet', marca: 'Marca A', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Pet', marca: 'Marca A', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
-    { tipo: 'Pet', marca: 'Marca A', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Seguros', marca: 'Marca A.1', imgService: 'assets/genesis-foto/veicular.png', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Seguros', marca: 'Marca A.2', imgService: 'assets/genesis-foto/veicular.png', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Seguros', marca: 'Marca A.3', imgService: 'assets/genesis-foto/veicular.png', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Seguros', marca: 'Marca A.4', imgService: 'assets/genesis-foto/veicular.png', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Saude', marca: 'Marca b', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Saude', marca: 'Marca b', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Saude', marca: 'Marca b', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Saude', marca: 'Marca b', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Saude', marca: 'Marca b', imgService: 'assets/genesis-foto/saude-genesis.png', titulo:'Planos de Saúde', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Financeiro', marca: 'Marca c', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Financeiro', marca: 'Marca c', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Financeiro', marca: 'Marca c', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Financeiro', marca: 'Marca c', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Financeiro', marca: 'Marca c', imgService: 'assets/genesis-foto/seguro-logo1.jpg', titulo:'Seguro Financeiro', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Seguros', marca: 'Marca d.1', imgService: 'assets/genesis-foto/veicular.png', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Seguros', marca: 'Marca d.2', imgService: 'assets/genesis-foto/veicular.png', titulo:'Seguro Veicular', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Pet', marca: 'Marca e', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Pet', marca: 'Marca e', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Pet', marca: 'Marca e', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Pet', marca: 'Marca e', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Pet', marca: 'Marca e', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
+    { tipo: 'Pet', marca: 'Marca e', imgService: 'assets/genesis-foto/plano-saude-pet.png', titulo:'Plano Saúde Pet', textoImg:'Seguros De Veículos Com Todas As Seguradoras.' },
 
     // Adicione mais marcas conforme necessário
   ];
 
-  filtrarMarcasPorTipo(tipo: string): string[] {
+  filtrarMarcasPorTipo(tipo: string): any[] {
     // Lógica para filtrar marcas com base no tipo
-    const marcasFiltradas = this.marcas
+    return this.marcas
       .filter((marca) => marca.tipo === tipo)
-      .map((marca) => marca.marca);
-
-    return Array.from(new Set(marcasFiltradas)); // Remove duplicatas, se houver
+      .map(({marca, imgService, titulo, textoImg}) => ({marca, imgService, titulo, textoImg}));
   }
 
   filtrarMarcas(tipo: string): string[]{

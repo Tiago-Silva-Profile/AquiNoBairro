@@ -20,18 +20,18 @@
     </div>
   </div>
 
-<div *ngIf="marcasFiltradas && marcasFiltradas.length > 0">
+<div *ngIf="marcasFiltradas && marcasFiltradas.length > 0">.
   <h3>Marcas Filtradas:</h3>
   <!-- <ul>
     <li *ngFor="let marca of marcasFiltradas">{{ marca }}</li>
   </ul> -->
 
   <div class="portfolio-container">
-    <div class="portfolio-box" *ngFor="let item of servicos">
+    <div class="portfolio-box" *ngFor="let item of marcasFiltradas">
       <img [src]="item.imgService" [alt]="" />
-      <p>
+      <!-- <p>
         {{item.textoImg}}
-      </p>
+      </p> -->
       <div class="portfolio-layer">
         <h4>{{item.titulo}}</h4>
         <a href="">
