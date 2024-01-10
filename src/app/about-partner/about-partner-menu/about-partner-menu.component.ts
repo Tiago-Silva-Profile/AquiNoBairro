@@ -12,11 +12,11 @@ export class AboutPartnerMenuComponent implements OnInit{
   selectedMarca: string = '';
 
   productService:any[] = [
-    {service:'Planos de Saúde', caminho:'/partner/seguradoras'},
-    {service:'Planos Odontologicos', caminho:'/partner/seguradoras'},
-    {service:'Planos de Saúde Pet', caminho:'/partner/seguradoras'},
-    {service:'Seguro Veícular', caminho:'/partner/seguradoras'},
-    {service:'Seguro de Vida', caminho:'/partner/seguradoras'},
+    {service:'Planos de Saúde', plano:'Saude'},
+    {service:'Planos Odontologicos', plano:''},
+    {service:'Planos de Saúde Pet', plano:''},
+    {service:'Seguro Veícular', plano:'Seguros'},
+    {service:'Seguro de Vida', plano:''},
   ]
 
   //Sempre que a navegação for concluída, a página será rolada para o topo.

@@ -26,7 +26,7 @@
             PRODUTOS E SERVIÇOS
           </a>
           <ul class="dropdown-menu-partner" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item-partner" *ngFor="let item of productService" routerLink="/partner/produtos">{{item.service}}</a></li>
+            <li><a class="dropdown-item-partner" *ngFor="let item of productService" [routerLink]="['/partner/produtos/:value']" (click)="redirecionar(item.plano)">{{item.service}}</a></li>
             <li><hr class="dropdown-divider-partner"></li>
             <li><a class="dropdown-item-partner" [routerLink]="['/partner/produtos']">Veja mais</a></li>
           </ul>

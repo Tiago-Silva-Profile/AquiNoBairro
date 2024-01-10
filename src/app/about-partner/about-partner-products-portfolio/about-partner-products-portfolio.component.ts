@@ -39,8 +39,8 @@ export class AboutPartnerProductsPortfolioComponent implements OnInit {
   ngOnInit(): void {
 
     // Realiza o filtro do valor passado pela URL
-    // this.marcaSelecionadaUrl = this.route.snapshot.paramMap.get('value')
-    // this.realizarFiltro(this.marcaSelecionadaUrl)
+    this.marcaSelecionadaUrl = this.route.snapshot.paramMap.get('value')
+    this.realizarFiltro(this.marcaSelecionadaUrl)
 
 
     /**
