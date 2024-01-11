@@ -1,45 +1,35 @@
-<div class="we-time">
+<div class="we-product">
   <h1>PRODUTOS & SERVIÇOS</h1>
 
   <!-- FILTRO NOS PRODUTOS E SERVIÇOS DOS PARCEIROS -->
-  <div>
-    <label for="tipoSelecionado">Selecione o tipo de veículo:</label>
-    <select id="tipoSelecionado" [(ngModel)]="tipoSelecionado">
+  <div class="search-service-partner">
+    <label for="tipoSelecionado" placeholder="Produto/Serviço"></label>
+    <select id="tipoSelecionado" placeholder="Search…" [(ngModel)]="tipoSelecionado" >
       <option *ngFor="let item of marcaSelecionada" [value]="item">{{item}}</option>
     </select>
     <button (click)="realizarFiltro(tipoSelecionado)">Filtrar Marcas</button>
   </div>
 
-  <div class="team-member">
-    <div class="team-member-img" *ngFor="let item of colabs">
-      <a href="">
-        <img [src]="item.img" alt="Foto do Membro da Equipe 2">
-        <p>{{item.colab}}</p>
-        <p>{{item.ocupacao}}</p>
-      </a>
-    </div>
-  </div>
+  <div *ngIf="marcasFiltradas && marcasFiltradas.length > 0">.
+    <h3>Marcas Filtradas:</h3>
+    <!-- <ul>
+      <li *ngFor="let marca of marcasFiltradas">{{ marca }}</li>
+    </ul> -->
 
-<div *ngIf="marcasFiltradas && marcasFiltradas.length > 0">.
-  <h3>Marcas Filtradas:</h3>
-  <!-- <ul>
-    <li *ngFor="let marca of marcasFiltradas">{{ marca }}</li>
-  </ul> -->
-
-  <div class="portfolio-container">
-    <div class="portfolio-box" *ngFor="let item of marcasFiltradas">
-      <img [src]="item.imgService" [alt]="" />
-      <!-- <p>
-        {{item.textoImg}}
-      </p> -->
-      <div class="portfolio-layer">
-        <h4>{{item.titulo}}</h4>
-        <a href="">
-          <i class="bx bx-link-external"></i>
-        </a>
+    <div class="portfolio-container">
+      <div class="portfolio-box" *ngFor="let item of marcasFiltradas">
+        <img [src]="item.imgService" [alt]="" />
+        <!-- <p>
+          {{item.textoImg}}
+        </p> -->
+        <div class="portfolio-layer">
+          <h4>{{item.titulo}}</h4>
+          <a href="">
+            <i class="bx bx-link-external"></i>
+          </a>
+        </div>
       </div>
-    </div>
-</div>
-</div>
+  </div>
+  </div>
 </div>
 
