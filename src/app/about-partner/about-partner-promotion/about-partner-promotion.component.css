@@ -15,7 +15,6 @@ div{
 .portfolio h2 {
   margin-bottom: 4rem;
 }
-
 .about-partner-promotions-container {
   align-items: center;
   border-radius: 2rem;
@@ -27,7 +26,7 @@ div{
   border-radius: 2rem;
   overflow: hidden;
   height: 45rem;
-  width: 110rem;
+  width: 111rem;
 }
 .about-partner-promotions-box img {
   width: 100%;

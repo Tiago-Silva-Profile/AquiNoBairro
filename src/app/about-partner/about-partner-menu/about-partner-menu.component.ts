@@ -1,15 +1,16 @@
-import { AboutPartnerProductsPortfolioComponent } from './../about-partner-products-portfolio/about-partner-products-portfolio.component';
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, ViewEncapsulation } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-about-partner-menu',
   templateUrl: './about-partner-menu.component.html',
-  styleUrls: ['./about-partner-menu.component.css']
+  styleUrls: ['./about-partner-menu.component.css'],
+  encapsulation: ViewEncapsulation.Emulated,
 })
 export class AboutPartnerMenuComponent implements OnInit{
 
   selectedMarca: string = '';
+  isScrolled = false;
 
   productService:any[] = [
     {service:'Planos de Saúde', plano:'Saude'},
@@ -32,6 +33,14 @@ export class AboutPartnerMenuComponent implements OnInit{
   redirecionar(value: string) {
     this.router.navigate(['partner/produtos',value ]);
   }
+
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    // Verifica a posição de rolagem para determinar se o usuário rolou para baixo
+    this.isScrolled = window.scrollY > 0;
+  }
+
   ngOnInit(): void {
 
   }

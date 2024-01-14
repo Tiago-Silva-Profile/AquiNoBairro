@@ -18,25 +18,27 @@ export class AboutPartnerProductsPortfolioComponent implements OnInit {
     imgService:string,
     titulo:string,
     textoImg:string}[] = [];
-
-
-
   colabs:any[]=[];
   marcaSelecionada: any;
   marcaSelecionadaUrl: any;
+  isModuleLoaded = false;
 
   constructor(private veiculoService: AboutPartnerServiceModule,
-              private route: ActivatedRoute
-             ,private appRoutingModule: AppRoutingModule ) {
+              private route: ActivatedRoute) {
       /*Busca do modulo service trazendo o json completo referente as marcas */
       this.servicos = veiculoService.marcas
-      console.log(this.servicos);
 
 
   }
 
 
   ngOnInit(): void {
+
+     // Simulando um atraso de carregamento (você pode substituir isso pelo carregamento real do módulo)
+     setTimeout(() => {
+      this.isModuleLoaded = true;
+    }, 2000); // Defina um valor adequado ao tempo de carregamento do seu módulo
+
 
     // Realiza o filtro do valor passado pela URL
     this.marcaSelecionadaUrl = this.route.snapshot.paramMap.get('value')
@@ -59,7 +61,6 @@ export class AboutPartnerProductsPortfolioComponent implements OnInit {
        * CORRIGIR ESTE FILTRO QUE ESTA QUEBRADO COM URGENCIA!
        */
       this.marcasFiltradas = this.veiculoService.filtrarMarcasPorTipo(value);
-      console.log(this.marcasFiltradas)
 
     }
 

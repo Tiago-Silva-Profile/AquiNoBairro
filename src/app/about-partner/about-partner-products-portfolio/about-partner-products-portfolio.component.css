@@ -1,5 +1,18 @@
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
 .we-product{
-  margin: 15rem 0 1rem 0;
+  margin: 10rem 0 1rem 0;
   min-height: 50rem;
   width: 100%;
   padding-left: 40px;
@@ -49,14 +62,14 @@ svg:hover{
   font-style: black;
   border: 1px solid black;
 }
-.portfolio-container {
+.portfolio-container-products {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
   gap: 1rem;
 }
 
-.portfolio-container .portfolio-box {
+.portfolio-container-products .portfolio-box-products {
   position: relative;
   border-radius: 1rem;
   box-shadow: 0 0 1rem var(--bg-color-two);
@@ -65,16 +78,16 @@ svg:hover{
   height: 13rem;
   border: 1.5px solid #FFF;
 }
-.portfolio-box img {
+.portfolio-box-products img {
   width: 80%;
   transition: 1.5s ease;
   }
 
-  .portfolio-box:hover img {
+  .portfolio-box-products:hover img {
     transform: scale(1.1);
   }
 
-  .portfolio-box .portfolio-layer {
+  .portfolio-box-products .portfolio-layer-products {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -91,22 +104,22 @@ svg:hover{
     transition: .5s ease;
   }
 
-  .portfolio-box:hover .portfolio-layer {
+  .portfolio-box-products:hover .portfolio-layer-products {
     transform: translateY(0);
     border: 2px solid #00035e;
   }
-  .portfolio-layer h4 {
+  .portfolio-layer-products h4 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: white;
   }
 
-  .portfolio-layer p {
+  .portfolio-layer-products p {
     font-size: .5rem;
     margin: .3rem 0 1rem;
   }
 
-  .portfolio-layer a {
+  .portfolio-layer-products a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +129,7 @@ svg:hover{
     border-radius: 50%;
   }
 
-  .portfolio-layer a i {
+  .portfolio-layer-products a i {
     font-size: 2rem;
     color: var(--second-bg-color);
   }

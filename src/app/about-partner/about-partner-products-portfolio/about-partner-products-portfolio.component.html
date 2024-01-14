@@ -1,3 +1,12 @@
+<div *ngIf="!isModuleLoaded" class="loading-overlay">
+  <!-- Conteúdo da página de carregamento aqui -->
+  <p>Carregando...</p>
+</div>
+
+<div *ngIf="isModuleLoaded" class="content">
+  <!-- Conteúdo principal do módulo aqui -->
+</div>
+
 <div class="we-product">
   <h1>PRODUTOS & SERVIÇOS</h1>
 
@@ -13,19 +22,15 @@
     </button>
   </div>
 
-  <div *ngIf="marcasFiltradas && marcasFiltradas.length > 0">.
-    <!-- <h3>Marcas Filtradas:</h3> -->
-    <!-- <ul>
-      <li *ngFor="let marca of marcasFiltradas">{{ marca }}</li>
-    </ul> -->
+  <div *ngIf="marcasFiltradas && marcasFiltradas.length > 0">
 
-    <div class="portfolio-container">
-      <div class="portfolio-box" *ngFor="let item of marcasFiltradas">
+    <div class="portfolio-container-products">
+      <div class="portfolio-box-products" *ngFor="let item of marcasFiltradas">
         <img [src]="item.imgService" [alt]="" />
         <!-- <p>
           {{item.textoImg}}
         </p> -->
-        <div class="portfolio-layer">
+        <div class="portfolio-layer-products">
           <h4>{{item.titulo}}</h4>
           <a href="">
             <i class="bx bx-link-external"></i>
