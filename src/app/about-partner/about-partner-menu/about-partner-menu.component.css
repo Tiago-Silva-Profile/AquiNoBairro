@@ -86,3 +86,10 @@ nav.scrolled {
   font-size: 17px;
 }
 
+@media (max-width: 600px) {
+  container-logo img{
+    height: 1rem;
+    width: 1rem;
+    }
+
+}
