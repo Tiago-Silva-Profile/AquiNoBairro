@@ -86,10 +86,97 @@ nav.scrolled {
   font-size: 17px;
 }
 
-@media (max-width: 600px) {
-  container-logo img{
-    height: 1rem;
-    width: 1rem;
+@media (max-width: 450px) {
+
+  nav{
+    display: flex;
+    width: 50%;
+    height: 9rem;
+    justify-content: space-between;
+    background-color: var(--font-size-letters);
+    margin-bottom: 2px;
+    align-items: center;
+  }
+  nav.scrolled {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5)
+  }
+  .container-logo img{
+    height: 9rem;
+    width: 20rem;
+    padding-top: 15px;
+    padding-bottom: 5px;
     }
+  .navbar-brand{
+    margin-top: 0;
+    border-top: 0;
+  }
+  .container-menu a{
+    color: var(--font-color-a);
+  }
+  .container-menu a:hover{
+
+    transform: scale(1.1);
+
+  }
+  .d-inline-block{
+    width: 15rem;
+    height: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+  }
+  .bi{
+    color: var(--font-color-a);
+    font-size: 25px;
+  }
+  .nav-link{
+    font-size: 16px;
+  }
+
+  /* Estilo para o cont�iner do dropdown (oculto por padr�o) */
+  .dropdown-partner {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Estilo para o conte�do do dropdown (itens) */
+  .dropdown-menu-partner {
+    display: none;
+    position: absolute;
+    width: 16rem;
+    z-index: 1;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    background-color: var(--font-size-letters);
+  }
+
+  /* Estilo para os links dentro do dropdown */
+  .dropdown-menu-partner a {
+    color: var(--font-color-a);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Exibir o dropdown quando o bot�o � clicado/hovered */
+  .dropdown-partner:hover .dropdown-menu-partner {
+    display: block;
+  }
+  .dropdown-toggle-partner{
+    border: none;
+    background-color: var(--font-size-letters);
+    color: #2596be;
+    font-size: 17px;
+  }
+
+}
+
+@media (min-width: 451px) and (max-width: 600px){
+
+}
+
+
+@media (min-width: 451px) and (max-width: 600px){
 
 }
