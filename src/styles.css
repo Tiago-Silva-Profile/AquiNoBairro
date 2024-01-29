@@ -135,8 +135,8 @@ span {
     color: var(--second-bg-color);
 }
 
-
-/* BREAKPOINTS */
+/*
+/* BREAKPOINTS
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -264,7 +264,7 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
-}
+} */
 
 .whatsapp-icon {
   position: fixed;

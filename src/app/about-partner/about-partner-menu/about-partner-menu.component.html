@@ -1,52 +1,71 @@
+
+
 <nav class="navbar navbar-expand-lg fixed-top" [ngClass]="{'scrolled': isScrolled}">
 
-  <div class="container-logo">
-    <a class="navbar-brand" href="#">
-      <img src="assets/logo-genesis.png" alt="" class="d-inline-block">
-    </a>
-  </div>
-
-  <div class="container-menu">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/partner/about">SOBRE NÓS</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/partner/produtos/:value']" (click)="redirecionar('Seguros')">SEGURADORAS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/partner/produtos']" >PLANOS DE SAÚDE</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/partner/contatos">CONTATOS</a>
-        </li>
-        <li class="nav-item dropdown-partner">
-          <a class="nav-link dropdown-toggle" routerLink="/partner/produtos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            PRODUTOS E SERVIÇOS
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo-genesis.png" alt="" class="d-inline-block">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo-genesis.png" alt="" class="d-inline-block">
           </a>
-          <ul class="dropdown-menu-partner" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item-partner" *ngFor="let item of productService" [routerLink]="['/partner/produtos/:value']" (click)="redirecionar(item.plano)">{{item.service}}</a></li>
-            <li><hr class="dropdown-divider-partner"></li>
-            <li><a class="dropdown-item-partner" [routerLink]="['/partner/produtos']">Veja mais</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="menu-social">
+          <div class="container-menu">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/partner/about">SOBRE NÓS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/partner/contatos">CONTATOS</a>
+              </li>
+              <li class="nav-item dropdown-partner">
+                <a class="nav-link dropdown-toggle" routerLink="/partner/produtos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PRODUTOS E SERVIÇOS
+                </a>
+                <ul class="dropdown-menu-partner" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item-partner" *ngFor="let item of productService" [routerLink]="['/partner/produtos/:value']" (click)="redirecionar(item.plano)">{{item.service}}</a></li>
+                  <li><hr class="dropdown-divider-partner"></li>
+                  <li><a class="dropdown-item-partner" [routerLink]="['/partner/produtos']">Veja mais</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
 
-  <div class="container-social-network">
-    <a class="navbar-brand" target="_blank" href="https://www.facebook.com/?locale=pt_BR">
-      <i class="bi bi-facebook"></i>
-    </a>
-    <a class="navbar-brand" target="_blank" href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fnotifications%2F">
-      <i class="bi bi-linkedin"></i>
-    </a>
-    <a class="navbar-brand" target="_blank" href="https://www.instagram.com/">
-      <i class="bi bi-instagram"></i>
-    </a>
-    <a class="navbar-brand" target="_blank" href="https://web.whatsapp.com/">
-      <i class="bi bi-whatsapp"></i>
-    </a>
+          <div class="container-social-network">
+            <a class="navbar-brand" target="_blank" href="https://www.facebook.com/?locale=pt_BR">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a class="navbar-brand" target="_blank" href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fnotifications%2F">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a class="navbar-brand" target="_blank" href="https://www.instagram.com/">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a class="navbar-brand" target="_blank" href="https://web.whatsapp.com/">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
   </div>
 </nav>
+
+
+
+
+  <!-- <div class="container-menu">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
+    </div>
+  </div> -->
+
+
+

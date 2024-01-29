@@ -72,14 +72,6 @@ nav{
   margin: 0 20rem 0 20rem;
 }
 
-/* Ativando o responsivo no menu*/
-@media (min-width: 834px){
-
-  .container-category{
-    display: block;
-  }
-
-}
 .container-category a:hover {
   border-bottom: 3px solid white;
 }
