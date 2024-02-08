@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.io.Serializable;
 import java.util.UUID;
 
+
 @Entity
 @Table(name = "TB_PARTNER")
 public class PartnerModel implements Serializable {
